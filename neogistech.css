@@ -1,8 +1,13 @@
+:root{
+    --color-primary: #750061;
+}
+
 body{
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
 }
 
+/*Navbar styles*/
 .align-menu-txt{
     justify-content: end;
 }
@@ -10,25 +15,49 @@ body{
 .nav-style-margin{
     height: 70px;
 }
-.container1{
-    display: flex;
-    margin: 0 150px 0 150px;
-}
 
 .custom-navbar .nav-link.active {
   text-decoration: underline;
   font-weight: 700;
-  color: #750061 !important;
+  color: var(--color-primary) !important;
 }
 
-.short-column{
-    width: 40%;
-}
+/*General styles*/
 
-.margin-section{
-    margin-top: 100px;
+h1{
+    font-weight: 700 !important;
+    margin-bottom: 40px !important;
 }
 
 p{
     line-height: 2;
+    margin-bottom: 40px !important;
+}
+
+.boton-principal{
+    background-color: var(--color-primary);
+    color: white;
+    padding: 4px 60px;
+    border: 0;
+    font-weight: 500;
+}
+
+/*Hero section*/
+.herosection{
+    display: flex;
+    margin: 100px 90px 100px 150px;
+    align-items: center;
+}
+
+.heroson{
+    width: 40%;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  /* tablets */
+
+}
+
+@media (max-width: 576px) {
+  /* móviles */
 }
