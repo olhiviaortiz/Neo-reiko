@@ -1,0 +1,21 @@
+body{
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.container1{
+    display: flex;
+    margin: 0 150px 0 150px;
+}
+
+.short-column{
+    width: 40%;
+}
+
+.margin-section{
+    margin-top: 100px;
+}
+
+p{
+    line-height: 2;
+}
