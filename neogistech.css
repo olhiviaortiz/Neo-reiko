@@ -3,9 +3,22 @@ body{
   font-optical-sizing: auto;
 }
 
+.align-menu-txt{
+    justify-content: end;
+}
+
+.nav-style-margin{
+    height: 70px;
+}
 .container1{
     display: flex;
     margin: 0 150px 0 150px;
+}
+
+.custom-navbar .nav-link.active {
+  text-decoration: underline;
+  font-weight: 700;
+  color: #750061 !important;
 }
 
 .short-column{
