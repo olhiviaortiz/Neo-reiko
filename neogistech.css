@@ -125,6 +125,22 @@ section {
     font-weight: 600;
 }
 
+/*services section*/
+.carusel{
+    width: 60%;
+    height: 500px;
+    background-color: var(--secondary-bg);
+    display: flex;
+}
+
+.title-services{
+    margin-top: 8%;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 300;
+}
+
+
 @media (min-width: 577px) and (max-width: 1200px) {
   /* tablets */
     .herosection{
