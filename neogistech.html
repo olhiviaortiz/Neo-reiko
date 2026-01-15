@@ -112,23 +112,107 @@
         </section>
         <section id="services">
             <h1 class="margin-long titles-style">Services Overview</h1>
-            <div class="carusel">
-                <div>
-                    <h3 class="title-services">Quality Engineering & Testing</h3>
-                    <h3 class="text-bold col70">Ensuring every release meets the highest standards</h3>
-                    <ul class="style-list-services">
-                        <li>Manual & Automated Functional Testing</li>
-                        <li>Testing for AI-Driven Applications</li>
-                        <li>Performance & Load Testing</li>
-                        <li>Test Strategy & Governance</li>
-                        <li>End-to-End QA Management</li>
-                    </ul>
+                <div class="services-carousel">
+                    <button class="nav prev" aria-label="Previous">‹</button>
+                    <div class="viewport">
+                        <div class="track">
+                            <div class="card-service">
+                                <!-- TU CARD 1 -->
+                                <div class="carusel">
+                                    <div>
+                                        <h3 class="title-services">Quality Engineering & Testing</h3>
+                                        <h3 class="text-bold col70">Ensuring every release meets the highest standards</h3>
+                                        <ul class="style-list-services">
+                                            <li>Manual & Automated Functional Testing</li>
+                                            <li>Testing for AI-Driven Applications</li>
+                                            <li>Performance & Load Testing</li>
+                                            <li>Test Strategy & Governance</li>
+                                            <li>End-to-End QA Management</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <img src="./img/services.png" class="img-services">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-service">
+                                <!-- TU CARD 2 -->
+                                <div class="carusel">
+                                    <div>
+                                        <h3 class="title-services">Observability & Performance Engineering</h3>
+                                        <h3 class="text-bold col70">Full visibility and optimal performance across digital platforms</h3>
+                                        <ul class="style-list-services">
+                                            <li>Full Observability Architecture & Strategy</li>
+                                            <li>Application Performance Engineering</li>
+                                            <li>Metrics, Logs & Traces Integration</li>
+                                            <li>Incident Prevention & System Optimization</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <img src="./img/services.png" class="img-services">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-service">
+                                <!-- TU CARD 3 -->
+                                <div class="carusel">
+                                    <div>
+                                        <h3 class="title-services">Software Development</h3>
+                                        <h3 class="text-bold col70">Modern engineering to support evolving business needs</h3>
+                                        <ul class="style-list-services">
+                                            <li>Backend Engineering & API Development</li>
+                                            <li>Microservices Architecture</li>
+                                            <li>Secure & Scalable Application Design</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <img src="./img/services.png" class="img-services">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-service">
+                                <!-- TU CARD 4 -->
+                                <div class="carusel">
+                                    <div>
+                                        <h3 class="title-services">Data & Analytics</h3>
+                                        <h3 class="text-bold col70"> Unlocking value through data-driven insights</h3>
+                                        <ul class="style-list-services">
+                                            <li>Data Pipelines & Integrations</li>
+                                            <li>Dashboards & Reporting</li>
+                                            <li>Real-Time Operational Insights</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <img src="./img/services.png" class="img-services">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-service">
+                                <!-- TU CARD 5 -->
+                                <div class="carusel">
+                                    <div>
+                                        <h3 class="title-services">AI Integration & AI Testing Strategy</h3>
+                                        <h3 class="text-bold col70">Helping companies adopt, validate, and scale AI solutions responsibly</h3>
+                                        <ul class="style-list-services">
+                                            <li>AI Readiness & Integration Planning</li>
+                                            <li>AI Reliability & Risk Testing</li>
+                                            <li>AI Performance Monitoring</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <img src="./img/services.png" class="img-services">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="nav next" aria-label="Next">›</button>
                 </div>
-                <div>
-                    <img src="./img/services.png" class="img-services">
-                </div>
-            </div>
-        </section>
+            </section>
         
         <!--script de bootstrap-->
         <script
@@ -160,5 +244,36 @@
                 });
             });
         </script>
+        <!--Carrucel-->
+        <script>
+            const track = document.querySelector('.track');
+            const cards = document.querySelectorAll('.card-service');
+            const next = document.querySelector('.next');
+            const prev = document.querySelector('.prev');
+
+            let index = 0;
+
+            function updateCarousel() {
+            const cardWidth = cards[0].offsetWidth;
+            const gap = 48; // 3rem
+            const moveX = (cardWidth + gap) * index;
+            track.style.transform = `translateX(-${moveX}px)`;
+            }
+
+            /* 👉 NEXT (circular) */
+            next.addEventListener('click', () => {
+            index = (index + 1) % cards.length;
+            updateCarousel();
+            });
+
+            /* 👉 PREV (circular) */
+            prev.addEventListener('click', () => {
+            index = (index - 1 + cards.length) % cards.length;
+            updateCarousel();
+            });
+
+            window.addEventListener('resize', updateCarousel);
+        </script>
+
     </body>
 </html>
