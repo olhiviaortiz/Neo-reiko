@@ -14,7 +14,7 @@ body{
 
 /*Navbar styles*/
 .align-menu-txt{
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .nav-style-margin{
@@ -127,10 +127,10 @@ section {
 
 /*services section*/
 .carusel{
-    height: 450px;
+    height: 380px;
     background-color: var(--secondary-bg);
     display: flex;
-    padding: 5%;
+    padding: 1%;
 }
 
 .title-services{
@@ -229,10 +229,23 @@ section {
     }
     .img-about{
     width: 70%;
+    scale: 0.9;
     display: block;
     margin: 40px auto 0;
     }
     
+    .carusel{
+        height: 360px;
+        background-color: var(--secondary-bg);
+        display: flex;
+        padding: 2%;
+    }
+
+    .img-services{
+    display: block;
+    margin: 25% 20%;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -271,4 +284,9 @@ section {
     display: block;
     margin: 32px auto 0;
     }
+
+    .carusel{
+        flex-direction: column-reverse;
+    }
+
 }
