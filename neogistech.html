@@ -77,7 +77,7 @@
                     <h2 class="subtitles">What Sets Us Apart or Value Pillars:</h2>
                     <div class="cols-container valor-about">
                         <div>
-                            <img src="./img/icons/elipse.png">
+                            <img src="./img/icons/s1-1.png">
                         </div>
                         <div>
                             <h3 class="text-bold">Enterprise Expertise</h3>
@@ -87,7 +87,7 @@
 
                     <div class="cols-container valor-about">
                         <div>
-                            <img src="./img/icons/elipse.png">
+                            <img src="./img/icons/s1-2.png">
                         </div>
                         <div>
                             <h3 class="text-bold">Modern Engineering</h3>
@@ -97,7 +97,7 @@
 
                     <div class="cols-container valor-about">
                         <div>
-                            <img src="./img/icons/elipse.png">
+                            <img src="./img/icons/s1-3.png">
                         </div>
                         <div>
                             <h3 class="text-bold">Agile Delivery</h3>
@@ -133,7 +133,7 @@
                                         </ul>
                                     </div>
                                     <div>
-                                        <img src="./img/services.png" class="img-services">
+                                        <img src="./img/icons/s2-1.png" class="img-services">
                                     </div>
                                 </div>
                             </div>
@@ -152,7 +152,7 @@
                                         </ul>
                                     </div>
                                     <div>
-                                        <img src="./img/services.png" class="img-services">
+                                        <img src="./img/icons/s2-2.png" class="img-services">
                                     </div>
                                 </div>
                             </div>
@@ -170,7 +170,7 @@
                                         </ul>
                                     </div>
                                     <div>
-                                        <img src="./img/services.png" class="img-services">
+                                        <img src="./img/icons/s2-3.png" class="img-services">
                                     </div>
                                 </div>
                             </div>
@@ -188,7 +188,7 @@
                                         </ul>
                                     </div>
                                     <div>
-                                        <img src="./img/services.png" class="img-services">
+                                        <img src="./img/icons/s2-4.png" class="img-services">
                                     </div>
                                 </div>
                             </div>
@@ -206,13 +206,105 @@
                                         </ul>
                                     </div>
                                     <div>
-                                        <img src="./img/services.png" class="img-services">
+                                        <img src="./img/icons/s2-5.png" class="img-services">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <button class="nav next" aria-label="Next">›</button>
+                </div>
+            </section>
+
+            <section id="why-us">
+                <h1 class="margin-long titles-style">Why Neogistech</h1>
+                <div class="about-container" style="align-items: center;">
+                    <div>
+                        <img src="./img/why.png">
+                    </div>
+                    <div>
+                        <div class="why-points">
+                            <div>
+                                <img src="./img/icons/s3-1.png">
+                            </div>
+                            <div>
+                                <h3 class="text-bold">Fortune 500 Expertise</h3>
+                                <p>Experience solving complex engineering challenges at enterprise scale.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-points">
+                            <div>
+                                <img src="./img/icons/s3-2.png">
+                            </div>
+                            <div>
+                                <h3 class="text-bold">Innovation-Driven Engineering</h3>
+                                <p>Modern, forward-looking methodologies and engineering excellence.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-points">
+                            <div>
+                                <img src="./img/icons/s3-3.png">
+                            </div>
+                            <div>
+                                <h3 class="text-bold">Integrated Multidisciplinary Teams</h3>
+                                <p>Unified expertise across QA, Performance, Observability, Development, Data and AI.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-points">
+                            <div>
+                                <img src="./img/icons/s3-4.png">
+                            </div>
+                            <div>
+                                <h3 class="text-bold">Agile & Efficient Delivery</h3>
+                                <p>Lean, adaptive delivery that accelerates results.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-points">
+                            <div>
+                                <img src="./img/icons/s3-5.png">
+                            </div>
+                            <div>
+                                <h3 class="text-bold">Built for Modern Digital Organizations</h3>
+                                <p>Tailored solutions for both enterprises and high-growth startups.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="achievements">
+                <h1 class="margin-long titles-style">Selected Achievements</h1>
+                <h2 class="subtitles margin-long">Our Impact</h2>
+                <div class="achi-conteiner">
+                    <div class="achi-col">
+                        <div class="col-mini">
+                            <div>
+                                40% increase in scalability after performance engineering program implementation.
+                            </div>
+                            <div>
+                                Built real-time operational analytics improving decision-making speed across teams.
+                            </div>
+                        </div>
+                        <div class="col-mini">
+                            <div>
+                                Designed a full AI testing strategy for critical AI-driven processes.
+                            </div>
+                            <div>
+                                Delivered enterprise-wide observability framework for a complex distributed ecosystem.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-mini-2">
+                        <div>
+                            <img src="./img/achievements.png">
+                        </div>
+                        <div class="subtitles col80">
+                            95% reduction in testing cycle time after QA automation transformation.
+                        </div>
+                    </div>
                 </div>
             </section>
         
@@ -255,27 +347,36 @@
 
             let index = 0;
 
+            function isMobile() {
+                return window.innerWidth <= 576;
+            }
+
             function updateCarousel() {
-            const cardWidth = cards[0].offsetWidth;
-            const gap = 48; // 3rem
-            const moveX = (cardWidth + gap) * index;
-            track.style.transform = `translateX(-${moveX}px)`;
+                const cardWidth = cards[0].offsetWidth;
+                const gap = isMobile() ? 0 : 48; // sin gap en mobile
+                const moveX = (cardWidth + gap) * index;
+
+                track.style.transform = `translateX(-${moveX}px)`;
             }
 
             /* 👉 NEXT (circular) */
             next.addEventListener('click', () => {
-            index = (index + 1) % cards.length;
-            updateCarousel();
+                index = (index + 1) % cards.length;
+                updateCarousel();
             });
 
             /* 👉 PREV (circular) */
             prev.addEventListener('click', () => {
-            index = (index - 1 + cards.length) % cards.length;
-            updateCarousel();
+                index = (index - 1 + cards.length) % cards.length;
+                updateCarousel();
             });
 
-            window.addEventListener('resize', updateCarousel);
-        </script>
+            window.addEventListener('resize', () => {
+                index = 0; // resetea para evitar desfaces
+                updateCarousel();
+            });
 
+            updateCarousel();
+        </script>
     </body>
 </html>

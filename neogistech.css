@@ -127,7 +127,7 @@ section {
 
 /*services section*/
 .carusel{
-    height: 380px;
+    height: 330px;
     background-color: var(--secondary-bg);
     display: flex;
     padding: 1%;
@@ -194,6 +194,45 @@ section {
 .prev { left: 1rem; }
 .next { right: 1rem; }
 
+/*why section*/
+.why-points{
+    display: flex;
+    gap: 48px;
+    border-bottom: 1px solid black;
+    height: 120px;
+    padding: 3%;
+    padding-top: 3%;
+    align-items: center;
+}
+
+
+/*Achievements*/
+.achi-col{
+    display: flex;
+    width: 50%;
+}
+
+.achi-conteiner{
+    display: flex;
+    gap: 80px;
+    margin: 5% 7%;
+    align-items: center;
+}
+
+.col-mini{
+    display: flex;
+    flex-direction: column;
+    row-gap: 65px;
+    justify-content: flex-end;
+    padding-right: 5%;
+}
+
+.col-mini-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
 
 @media (min-width: 577px) and (max-width: 1200px) {
@@ -246,6 +285,20 @@ section {
     margin: 25% 20%;
     }
 
+    .achi-conteiner{
+        flex-direction: column-reverse;
+    }
+
+    .achi-col{
+        width: 75%;
+    }
+
+    .col-mini-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
 }
 
 @media (max-width: 576px) {
@@ -287,6 +340,62 @@ section {
 
     .carusel{
         flex-direction: column-reverse;
+        height: 530px;
+    }
+    .viewport {
+    overflow: hidden;
     }
 
+    .track {
+        gap: 0;
+        padding-left: 0;
+    }
+
+    .card-service {
+        min-width: 100%;
+        max-width: 100%;
+        padding: 15%;
+    }
+
+    .services-carousel {
+        margin: 2rem auto;
+    }
+
+    .nav {
+        top: auto;
+        bottom: -3rem;
+        transform: none;
+    }
+
+    .prev {
+        left: 40%;
+    }
+
+    .next {
+        right: 40%;
+    }
+
+    .img-services {
+    display: block;
+    margin: -8% 10%;
+    padding: 7%;
+    }
+
+    .why-points{
+    flex-direction: column;
+    height: 270px;
+    padding-top: 7%;
+    }
+
+    .achi-conteiner{
+        flex-direction: column-reverse;
+    }
+
+    .achi-col{
+        flex-direction: column;
+    }
+
+    .col-mini{
+        padding-bottom: 65px;
+    }
 }
