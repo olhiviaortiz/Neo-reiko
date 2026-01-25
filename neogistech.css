@@ -83,6 +83,7 @@ section {
     svg{
         color: var(--hover-primary);
     }
+    cursor: pointer;
 }
 
 .boton-contacto:active{
@@ -220,10 +221,13 @@ section {
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
-  background: white;
+  background: var(--color-primary);
+  color: white;
   border: none;
   font-size: 2rem;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 1%;
 }
 
 .prev { left: 1rem; }
