@@ -1,6 +1,8 @@
 :root{
     --color-primary: #750061;
     --secondary-bg: #EEEEFF;
+    --hover-primary: #9F4D91;
+    --active-primary: #B97FAF;
 }
 
 body{
@@ -54,6 +56,39 @@ section {
     padding: 4px 60px;
     border: 0;
     font-weight: 500;
+}
+
+.boton-principal:hover{
+    background-color: var(--hover-primary);
+
+}
+
+.boton-principal:active{
+    background-color: var(--active-primary);
+}
+
+.boton-contacto{
+    text-decoration: none;
+    span{
+        color: var(--color-primary) !important;
+    }
+}
+
+.boton-contacto:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--hover-primary);
+    span{
+        color: var(--hover-primary) !important;
+    }
+    svg{
+        color: var(--hover-primary);
+    }
+}
+
+.boton-contacto:active{
+    span{
+        color: var(--active-primary) !important;
+    }
 }
 
 .subtitles{
@@ -280,11 +315,16 @@ section {
     color: var(--color-primary);
 }
 
-.number-col{
+.svg-boton{
+    color: var(--color-primary);
+    height: 26px;
+}
+
+
+/*.number-col{
     display: flex;
     gap: 15px;
-
-}
+}*/
 
 @media (min-width: 577px) and (max-width: 1200px) {
   /* tablets */
