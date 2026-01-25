@@ -234,6 +234,24 @@ section {
     text-align: center;
 }
 
+/*models section*/
+.models-container{
+    display: flex;
+    gap: 80px;
+    margin: 5% 7%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icon-margin{
+    margin-bottom: 10%;
+    width: 92px;
+}
+
+/*.col-hijos{
+    flex: 1 1 1;
+}*/
+
 
 @media (min-width: 577px) and (max-width: 1200px) {
   /* tablets */
@@ -397,5 +415,10 @@ section {
 
     .col-mini{
         padding-bottom: 65px;
+    }
+
+    .models-container{
+        margin: 5% 15%;
+        justify-content: flex-start;
     }
 }
