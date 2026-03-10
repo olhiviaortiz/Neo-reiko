@@ -109,6 +109,13 @@ section {
     width: 40%;
 }
 
+.hero-vid{
+    width: 60%;
+    img {
+        width: 100%;
+    }
+}
+
 /*About section*/
 .margin-long{
     margin-left: 7%;
