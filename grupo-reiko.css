@@ -1,6 +1,6 @@
 :root{
     --color-primary: #329BAD;
-    --secondary-bg: #EEEEFF;
+    --secondary-bg: #98CCD5;
     --hover-primary: #9F4D91;
     --active-primary: #B97FAF;
 }
@@ -53,18 +53,18 @@ section {
 .boton-principal{
     background-color: var(--color-primary);
     color: white;
-    padding: 4px 60px;
+    padding: 4px 35px;
     border: 0;
     font-weight: 500;
 }
 
 .boton-principal:hover{
-    background-color: var(--hover-primary);
+    background-color: var(--secondary-bg);
 
 }
 
 .boton-principal:active{
-    background-color: var(--active-primary);
+    background-color: var(--color-primary);
 }
 
 .boton-contacto{
@@ -73,6 +73,25 @@ section {
         color: white !important;
     }
 }
+
+.boton-secundario{
+    background-color: var(--secondary-bg);
+    color: white;
+    padding: 4px 35px;
+    border: 0;
+    font-weight: 500;
+    color: black;
+}
+
+.boton-secundario:hover{
+    background-color: var(--color-primary);
+
+}
+
+.boton-secundario:active{
+    background-color: var(--secondary-bg);
+}
+
 
 .boton-contacto:hover{
     text-decoration: underline;
@@ -134,12 +153,16 @@ section {
 
 
 /*Somos*/
-.somos{
+.somos-section{
     background-image: url(./img-reiko/somos.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 790px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 12% 50% 0 7%;
 }
 
 /*About section*/
@@ -278,10 +301,11 @@ section {
     display: flex;
     gap: 48px;
     border-bottom: 1px solid black;
-    height: 120px;
+    height: 200px;
     padding: 3%;
     padding-top: 3%;
     align-items: center;
+    padding-right: 15%;
 }
 
 
@@ -402,6 +426,10 @@ section {
         text-align: center;
     }
 
+    .somos-section{
+    padding: 12% 35% 0 7%;
+    }
+
     .about-columns {
     width: 100%;
     }
@@ -486,6 +514,10 @@ section {
         text-align: center;
     }
 
+     .somos-section{
+    padding: 12% 10% 0 7%;
+    }
+
     .about-columns {
     width: 100%;
     }
@@ -547,7 +579,7 @@ section {
 
     .why-points{
     flex-direction: column;
-    height: 270px;
+    height: 355px;
     padding-top: 7%;
     }
 
