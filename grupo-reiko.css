@@ -371,8 +371,7 @@ section {
 /*models section*/
 .models-container{
     display: flex;
-    gap: 80px;
-    margin: 5% 7%;
+    margin: 2% 10%;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -382,9 +381,24 @@ section {
     width: 92px;
 }
 
-/*.col-hijos{
-    flex: 1 1 1;
-}*/
+.margin-top-dif{
+    margin-top: -75px;
+    padding-top: 5%;
+    color: white;
+    padding-bottom: 5%;
+}
+
+.col-hijos{
+    background-color: var(--card-dif);
+    width: 30%;
+    height: 275px;
+    padding: 3%;
+    color: black;
+}
+
+.proces-img{
+    width: 100%;
+}
 
 
 /*Contacto section*/
@@ -647,6 +661,15 @@ section {
     .models-container{
         margin: 5% 15%;
         justify-content: flex-start;
+    }
+
+    .col-hijos {
+    background-color: var(--card-dif);
+    width: 120%;
+    height: 275px;
+    padding: 17%;
+    color: black;
+    margin-bottom: 13%;
     }
 
     .col40{
