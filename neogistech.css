@@ -70,7 +70,7 @@ section {
 .boton-contacto{
     text-decoration: none;
     span{
-        color: var(--color-primary) !important;
+        color: white !important;
     }
 }
 
@@ -103,6 +103,7 @@ section {
     display: flex;
     margin: 5% 4% 7% 7%;
     align-items: center;
+    gap: 70px;
 }
 
 .heroson{
@@ -110,7 +111,7 @@ section {
 }
 
 .hero-vid{
-    width: 60%;
+    width: 100%;
     img {
         width: 100%;
     }
@@ -241,6 +242,13 @@ section {
 .next { right: 1rem; }
 
 /*why section*/
+
+.why-container{
+    display: flex;
+    gap: 80px;
+    margin: 5% 0 7% 0%;
+}
+
 .why-points{
     display: flex;
     gap: 48px;
@@ -302,7 +310,7 @@ section {
 /*Contacto section*/
 .contacto{
     background-color: var(--secondary-bg);
-    height: 513px;
+    height: 420px;
     padding-top: 2%;
 }
 
@@ -323,14 +331,21 @@ section {
 .cont-number{
     display: flex;
     gap: 60px;
-    color: var(--color-primary);
+    color: white;
 }
 
 .svg-boton{
-    color: var(--color-primary);
+    color: white;
     height: 26px;
 }
 
+.bg-color-redes{
+    background-color: #5F5FA1;
+}
+
+.contacto-redes{
+    padding: 5% 10% 4% 40%;
+}
 
 /*.number-col{
     display: flex;
@@ -342,6 +357,10 @@ section {
     .herosection{
         flex-direction: column-reverse;
         margin: 0;
+    }
+    .hero-vid{
+        width: 65%;
+        margin-bottom: 5%;
     }
     .heroson{
         width: 80%;
@@ -376,15 +395,17 @@ section {
     }
     
     .carusel{
-        height: 360px;
+        height: 600px;
         background-color: var(--secondary-bg);
         display: flex;
         padding: 2%;
+        flex-direction: column-reverse;
     }
 
     .img-services{
     display: block;
-    margin: 25% 20%;
+    width: 50%;
+    margin: 7% 25%;
     }
 
     .achi-conteiner{
@@ -402,10 +423,21 @@ section {
     }
 
     .cont-number{
-        flex-direction: column;
         row-gap: 20px;
     }
 
+    .why-container{
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .contacto-redes{
+    padding: 5% 10% 4% 10%;
+    }
+
+    .contacto{
+        height: 370px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -494,6 +526,10 @@ section {
     padding-top: 7%;
     }
 
+    .img-media-why{
+        text-align: center;
+    }
+
     .achi-conteiner{
         flex-direction: column-reverse;
     }
@@ -517,7 +553,7 @@ section {
     }
 
     .contacto{
-        height: 570px;
+        height: 325px;
     }
 
     .conct-container{
@@ -528,5 +564,14 @@ section {
         flex-direction: column;
         row-gap: 20px;
         padding-top: 10%;
+    }
+
+    .contacto-redes{
+    padding: 5% 10% 4% 10%;
+    }
+
+    .why-container{
+    display: flex;
+    flex-direction: column;
     }
 }

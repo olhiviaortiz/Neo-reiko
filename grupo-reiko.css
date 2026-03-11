@@ -177,6 +177,13 @@ section {
     margin: 5% 0 7% 7%;
 }
 
+ .about-container-reverse{
+    display: flex;
+    gap: 50px;
+    margin: 5% 1% 7% 12%;
+    flex-direction: row-reverse;
+}
+
 .img-about{
     width: 100%;
     height: auto;
@@ -209,12 +216,14 @@ section {
 }
 
 .quote{
-    width: 80%;
+    width: 70%;
     text-align: center;
     margin-top: 8%;
     font-size: 18px;
     font-style: italic;
     font-weight: 600;
+    margin: 0 auto;
+    margin-bottom: 5%;
 }
 
 /*services section*/
@@ -308,6 +317,19 @@ section {
     padding-right: 15%;
 }
 
+.why-points2{
+    display: flex;
+    border-bottom: 3px solid #98CCD5;
+    height: 175px;
+    padding: 3%;
+    padding-top: 3%;
+    align-items: center;
+    padding-right: 21%;
+}
+
+.img-media-why{
+        text-align: center;
+    }
 
 /*Achievements*/
 .achi-col{
@@ -434,9 +456,17 @@ section {
     width: 100%;
     }
     .about-container{
-        flex-direction: column;
-        margin: 5% 0 7% 7%;
+    flex-direction: column;
+    margin: 5% 0 7% 7%;
     }
+
+    .about-container-reverse{
+    flex-direction: column;
+    margin: 5% 0 7% 7%;
+    }
+
+    
+
     .col80{
         width: 90%;
     }
@@ -522,9 +552,15 @@ section {
     width: 100%;
     }
     .about-container{
-        flex-direction: column;
-        margin: 5% 0 7% 7%;
+    flex-direction: column;
+    margin: 5% 0 7% 7%;
     }
+
+    .about-container-reverse{
+    flex-direction: column;
+    margin: 5% 0 7% 7%;
+    }
+
     .col80{
         width: 90%;
     }
