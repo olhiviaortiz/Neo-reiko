@@ -3,6 +3,8 @@
     --secondary-bg: #98CCD5;
     --hover-primary: #9F4D91;
     --active-primary: #B97FAF;
+    --card-service:#F9CD4D;
+    --card-dif:#FFCD3E;
 }
 
 body{
@@ -227,12 +229,20 @@ section {
 }
 
 /*services section*/
-.carusel{
-    height: 330px;
-    background-color: var(--secondary-bg);
-    display: flex;
-    padding: 1%;
+.servicios-fondo{
+    background-color: black;
 }
+
+.carusel{
+    height: 475px;
+    background-color: var(--card-service);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.estilo-texto-card{
+        padding: 5% 10%;
+    }
 
 .title-services{
     margin-top: 8%;
@@ -252,7 +262,7 @@ section {
 
 .img-services{
     display: block;
-    margin: 5% 10%;
+    margin: 0;
 }
 
 .services-carousel {
@@ -274,10 +284,9 @@ section {
 
 /* Card */
 .card-service {
-  min-width: 60%;
+  min-width: 765px;
   max-width: 900px;
-  background: var(--secondary-bg);
-  padding: 5%;
+  background: var(--card-service);
 }
 
 /* Flechas */
@@ -465,11 +474,10 @@ section {
     margin: 5% 0 7% 7%;
     }
 
-    
-
     .col80{
         width: 90%;
     }
+
     .img-about{
     width: 70%;
     scale: 0.9;
@@ -478,17 +486,19 @@ section {
     }
     
     .carusel{
-        height: 600px;
-        background-color: var(--secondary-bg);
+        height: 450px;
+        background-color: var(--card-service);
         display: flex;
-        padding: 2%;
         flex-direction: column-reverse;
+    }
+
+    .card-service{
+        min-width: 685px;
     }
 
     .img-services{
     display: block;
-    width: 50%;
-    margin: 7% 25%;
+    margin: 0 auto;
     }
 
     .achi-conteiner{
@@ -572,7 +582,7 @@ section {
 
     .carusel{
         flex-direction: column-reverse;
-        height: 530px;
+        height: 360px;
     }
     .viewport {
     overflow: hidden;
@@ -584,9 +594,9 @@ section {
     }
 
     .card-service {
-        min-width: 100%;
+        min-width: 486px;
         max-width: 100%;
-        padding: 15%;
+        padding: 6%;
     }
 
     .services-carousel {
@@ -609,8 +619,7 @@ section {
 
     .img-services {
     display: block;
-    margin: -8% 10%;
-    padding: 7%;
+    width: 100%;
     }
 
     .why-points{
