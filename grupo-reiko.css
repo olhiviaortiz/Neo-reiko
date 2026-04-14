@@ -31,6 +31,8 @@ body{
   color: var(--color-primary) !important;
 }
 
+
+
 section {
   scroll-margin-top: 150px;
 }
@@ -72,7 +74,7 @@ section {
 .boton-contacto{
     text-decoration: none;
     span{
-        color: white !important;
+        color: black !important;
     }
 }
 
@@ -97,19 +99,19 @@ section {
 
 .boton-contacto:hover{
     text-decoration: underline;
-    text-decoration-color: var(--hover-primary);
+    text-decoration-color: #4F4F4F;
     span{
-        color: var(--hover-primary) !important;
+        color: #4F4F4F !important;
     }
     svg{
-        color: var(--hover-primary);
+        color: #4F4F4F;
     }
     cursor: pointer;
 }
 
 .boton-contacto:active{
     span{
-        color: var(--active-primary) !important;
+        color: #767676 !important;
     }
 }
 
@@ -401,6 +403,33 @@ section {
 }
 
 
+/*Portafolio section*/
+
+.portfolio-titulos{
+    font-size: 20pt;
+    text-align: center;
+    margin: 5%;
+}
+
+.portfolio-text{
+    text-align: center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+.linea-amarilla{
+    height: 2px;
+    background-color: #FFCD3E;
+    width: 100%;
+    margin: 20px auto;
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+
 /*Contacto section*/
 .contacto{
     background-color: var(--secondary-bg);
@@ -425,20 +454,20 @@ section {
 .cont-number{
     display: flex;
     gap: 60px;
-    color: white;
+    color: black;
 }
 
 .svg-boton{
-    color: white;
+    color: black;
     height: 26px;
 }
 
 .bg-color-redes{
-    background-color: #5F5FA1;
+    background-color: #FFCD3E;
 }
 
 .contacto-redes{
-    padding: 5% 10% 4% 40%;
+    padding: 6% 10% 4% 20%;
 }
 
 /*.number-col{
@@ -699,4 +728,7 @@ section {
     display: flex;
     flex-direction: column;
     }
+
+    .margin-top-dif{
+    margin-top: -40px;
 }
