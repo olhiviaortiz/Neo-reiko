@@ -53,8 +53,12 @@
         -->
        
         <section id="home">
-            <div class="herosection margin-section">
-                <div class="heroson">
+            <div class="herosection margin-section video-container">
+                <video autoplay muted loop playsinline webkit-playsinline class="video-bg">
+                    <source src="./img/hero-section-bg-new.mp4" type="video/mp4">
+                        Tu navegador no soporta video.
+                </video>
+                <div class="heroson contenido2">
                     <h1 class="titles-style">Engineering the Next Generation of Digital Solutions</h1>
                     <p class="text-style">
                         We help organizations build reliable, scalable, and high-performing digital ecosystems through Quality Engineering, Performance Testing, Observability, Software Development, Data Analytics, and AI Integration.
@@ -63,9 +67,11 @@
                         <button class="boton-principal"> See more</button>
                     </a>
                 </div>
+                <!--
                 <div class="hero-vid">
                     <img src="./img/hero-gif.gif">
                 </div>
+                -->
             </div>
         </section>
 
@@ -77,7 +83,9 @@
                     <p class="text-style col80">
                         Neogistech Consulting Services is a technology consulting firm helping organizations deliver exceptional digital products and experiences. We combine Fortune 500 engineering expertise with the agility of a modern consulting partner, supporting teams across the USA, Mexico, and LATAM.
                     </p>
-                    <img class="img-about" src="./img/about.png">
+                    <p class="quote">
+                            We focus on building strong engineering foundations — ensuring systems are tested, observable, scalable, and ready to support long-term growth.
+                    </p>
                 </div>
                 <div class="col100">
                     <h2 class="subtitles">What Sets Us Apart or Value Pillars:</h2>
@@ -110,13 +118,9 @@
                             <p>Lean execution with clarity, speed, and measurable outcomes.</p>
                         </div>
                     </div>
-                    <div>
-                        <p class="quote">
-                            We focus on building strong engineering foundations — ensuring systems are tested, observable, scalable, and ready to support long-term growth.
-                        </p>
-                    </div>
                 </div>
             </div>
+            <img src="./img/about-new.png" style="width: 100%;">
         </section>
         <section id="services">
             <h1 class="margin-long titles-style">Services Overview</h1>
@@ -432,6 +436,22 @@
                 offset: 150
             });
         </script>
+
+        <!--Reproducción automática de video-->
+        <script>
+document.addEventListener("DOMContentLoaded", function () {
+    const video = document.getElementById("bg-video");
+
+    video.muted = true;
+
+    video.addEventListener("loadeddata", function () {
+        video.play().catch(function(error){
+            console.log("Autoplay bloqueado:", error);
+        });
+    });
+});
+</script>
+
         <!--Cerrar navbar colapsada-->
         <script>
             const navLinks = document.querySelectorAll(
