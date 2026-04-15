@@ -138,6 +138,10 @@ video {
 
 .heroson{
     width: 40%;
+    padding: 4%;
+    text-align: left;
+    background-color: rgba(238, 238, 255, .8);
+    color: black;
 }
 
 .hero-vid{
