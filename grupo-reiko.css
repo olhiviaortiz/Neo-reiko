@@ -127,7 +127,7 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 600px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -172,7 +172,7 @@ section {
 /*About section*/
 .margin-long{
     margin-left: 7%;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .about-container{
