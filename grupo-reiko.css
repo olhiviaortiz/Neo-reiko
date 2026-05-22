@@ -399,7 +399,10 @@ section {
 }
 
 .proces-img{
-    width: 100%;
+    width: 60%;
+    margin: auto;
+    display: block;
+    padding-bottom: 9%;
 }
 
 
@@ -421,6 +424,9 @@ section {
     padding: 5%;
 }
 
+.proces-img1{
+    width: 100%;
+}
 .linea-amarilla{
     height: 2px;
     background-color: #FFCD3E;
