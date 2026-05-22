@@ -173,7 +173,7 @@ video {
 }
 
 .about-columns{
-    width: 50%;
+    width: 100%;
     
 }
 
@@ -209,6 +209,8 @@ video {
     font-size: 18px;
     font-style: italic;
     font-weight: 600;
+    margin-bottom: 6%;
+    margin-left: 10%;
 }
 
 /*services section*/
