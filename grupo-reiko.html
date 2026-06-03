@@ -13,7 +13,7 @@
         <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary" id="barnav">
             <div class="container-fluid nav-style-margin" style="margin-left: 5%; margin-right: 5%;">
                 <a class="navbar-brand" href="#">
-                    <img src="./img-reiko/logo-reiko.png" alt="Grupo-reiko-logo" style="width: 70%;">
+                    <img src="./img-reiko/logo-reiko.png" alt="Grupo-reiko-logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -63,7 +63,7 @@
                     </h1>
                 </div>
                 <div>
-                    <p class="text-style">
+                    <p class="text-style" style="font-size: 16pt;">
                         Soluciones Integrales en construcción, ingeniería y desarrollo inmobiliario.
                     </p>
                 </div>
@@ -220,8 +220,8 @@
                 </p>
         </section>
     
-        <section id="servicios" class="servicios-fondo">
-            <h1 class="margin-long titles-style" style="color: white; padding-top: 5%;">Nuestros servicios</h1>
+        <section id="servicios" class="servicios-fondo" style="padding-top: 2%;">
+            <h1 class="margin-long titles-style" style="color: white;">Nuestros servicios</h1>
                 <div class="services-carousel">
                     <button class="nav prev" aria-label="Previous">‹</button>
                     <div class="viewport">
@@ -355,13 +355,13 @@
             </section>
 
             <section id="procesos">
-                 <h1 class="margin-long titles-style">Nuestro proceso </h1>
+                 <h1 class="margin-long titles-style" >Nuestro proceso </h1>
                  <img class="proces-img" src="./img-reiko/proceso.png">
             </section>
 
-            <section id="portafolio" class="servicios-fondo margin-top-dif">
-                <h1 class="margin-long titles-style">Portafolio de proyectos</h1>
-                <img src="./img-reiko/portafolio1.png" class="proces-img">
+            <section id="portafolio" class="servicios-fondo" style="color: white; padding-top: 2%;">
+                <h1 class="margin-long-2 titles-style"">Portafolio de proyectos</h1>
+                <img src="./img-reiko/portafolio1.png" class="proces-img1">
                 <div class="portfolio-text">
                     <h2 class="portfolio-titulos">Residencia en Abadía de Sacromonte 152</h2>
                     <p>
@@ -370,7 +370,7 @@
                 </div>
                 <div class="linea-amarilla"></div>
                 
-                <img src="./img-reiko/portafolio2.png" class="proces-img">
+                <img src="./img-reiko/portafolio2.png" class="proces-img1">
                 <div class="portfolio-text">
                     <h2 class="portfolio-titulos">Residencia en Valle del Campanario</h2>
                     <p>
@@ -379,7 +379,7 @@
                 </div>
                 <div class="linea-amarilla"></div>
 
-                <img src="./img-reiko/portafolio3.png" class="proces-img">
+                <img src="./img-reiko/portafolio3.png" class="proces-img1">
                 <div class="portfolio-text">
                     <h2 class="portfolio-titulos">Residencia en Abadía de Sacromonte 159</h2>
                     <p>
@@ -389,7 +389,7 @@
                 <div class="linea-amarilla"></div>
 
 
-                <img src="./img-reiko/portafolio4.png" class="proces-img">
+                <img src="./img-reiko/portafolio4.png" class="proces-img1">
                 <div class="portfolio-text">
                     <h2 class="portfolio-titulos">Domos Ecoglamping San José de Gracia</h2>
                     <p>
@@ -398,7 +398,7 @@
                 </div>
                 <div class="linea-amarilla"></div>
 
-                <img src="./img-reiko/portafolio5.png" class="proces-img">
+                <img src="./img-reiko/portafolio5.png" class="proces-img1">
                 <div class="portfolio-text">
                     <h2 class="portfolio-titulos">Supervisión de Parques Fotovoltaicos</h2>
                     <p>
@@ -407,7 +407,7 @@
                 </div>
                 <div class="linea-amarilla"></div>
                 
-                <img src="./img-reiko/portafolio6.png" class="proces-img">
+                <img src="./img-reiko/portafolio6.png" class="proces-img1">
                 <div class="portfolio-text">
                     <h2 class="portfolio-titulos">Supervisión de Naves Industriales</h2>
                     <p>
@@ -494,9 +494,9 @@
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("barvar").style.top = "0";
+    document.getElementById("barnv").style.top = "0";
   } else {
-    document.getElementById("barvar").style.top = "-100px";
+    document.getElementById("barna").style.top = "-100px";
   }
   prevScrollpos = currentScrollPos;
 }

@@ -10,6 +10,7 @@
 body{
   font-family: "Noto Sans", sans-serif;
   font-optical-sizing: auto;
+  position: relative;
   data-bs-spy="scroll"
   data-bs-target=".custom-navbar"
   data-bs-offset="150px"
@@ -34,14 +35,14 @@ body{
 
 
 section {
-  scroll-margin-top: 150px;
+  scroll-margin-top: 140px;
 }
 
 /*General styles*/
 
 .titles-style{
     font-weight: 700;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 
 .text-style{
@@ -172,19 +173,23 @@ section {
 /*About section*/
 .margin-long{
     margin-left: 7%;
-    margin-top: 10%;
+    margin-top: 2%;
+}
+
+.margin-long-2{
+    margin-left: 7%;
 }
 
 .about-container{
     display: flex;
     gap: 80px;
-    margin: 5% 0 7% 7%;
+    margin: 0 0 7% 7%;
 }
 
  .about-container-reverse{
     display: flex;
     gap: 50px;
-    margin: 5% 1% 7% 12%;
+    margin: 0 1% 7% 12%;
     flex-direction: row-reverse;
 }
 
@@ -321,7 +326,7 @@ section {
     display: flex;
     gap: 48px;
     border-bottom: 1px solid black;
-    height: 200px;
+    height: 175px;
     padding: 3%;
     padding-top: 3%;
     align-items: center;
@@ -331,7 +336,7 @@ section {
 .why-points2{
     display: flex;
     border-bottom: 3px solid #98CCD5;
-    height: 175px;
+    height: 140px;
     padding: 3%;
     padding-top: 3%;
     align-items: center;
@@ -399,11 +404,18 @@ section {
 }
 
 .proces-img{
-    width: 100%;
+    width: 60%;
+    margin: auto;
+    display: block;
+    padding-bottom: 9%;
 }
 
 
 /*Portafolio section*/
+
+#portafolio{
+    scroll-margin-top: 200px;
+}
 
 .portfolio-titulos{
     font-size: 20pt;
@@ -421,6 +433,9 @@ section {
     padding: 5%;
 }
 
+.proces-img1{
+    width: 100%;
+}
 .linea-amarilla{
     height: 2px;
     background-color: #FFCD3E;
@@ -464,6 +479,7 @@ section {
 
 .bg-color-redes{
     background-color: #FFCD3E;
+    height: 500px;
 }
 
 .contacto-redes{

@@ -158,7 +158,7 @@ video {
 /*About section*/
 .margin-long{
     margin-left: 7%;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .about-container{
@@ -290,7 +290,7 @@ video {
 .why-container{
     display: flex;
     /*gap: 80px;*/
-    margin: 5% 0 7% 0%;
+    margin: 2% 0 7% 0%;
 }
 
 .why-points{
@@ -354,7 +354,7 @@ video {
 /*Contacto section*/
 .contacto{
     background-color: var(--secondary-bg);
-    height: 420px;
+    height: 480px;
     padding-top: 2%;
 }
 
